@@ -29,7 +29,7 @@ builder.Services.AddApplicationServices(builder.Configuration);
 var app = builder.Build();
 
 // 3. Configuración del Pipeline de Middleware
-app.UseMiddleware<ExceptionHandlingMiddleware>();
+//app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 app.UseSwagger();
 app.UseSwaggerUI(c =>
