@@ -31,14 +31,13 @@ var app = builder.Build();
 // 3. Configuración del Pipeline de Middleware
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 
-if (app.Environment.IsDevelopment())
+app.UseSwagger();
+app.UseSwaggerUI(c =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI(c =>
-    {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Microservicios Alojamiento API V1");
-    });
-}
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Microservicios Alojamiento API V1");
+    // Opcional: Esto hace que Swagger sea la página de inicio (https://url.com/)
+    // c.RoutePrefix = string.Empty; 
+});
 
 app.UseHttpsRedirection();
 
