@@ -1,0 +1,13 @@
+# Excluir carpetas de compilación
+bin/
+obj/
+.vs/
+.vscode/
+
+# Excluir archivos de configuración con secretos
+appsettings.Development.json
+
+# Excluir carpetas de dependencias de Angular
+node_modules/
+dist/
+.angular/

@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="Microservicios.Alojamiento.API/Microservicios.Alojamiento.API.csproj" Id="4c4f87f2-3fd1-466d-8df9-2499b45d15e3" />
+    <Project Path="Microservicios.Alojamiento.Business/Microservicios.Alojamiento.Business.csproj" Id="61ce58cf-3156-4b75-acc0-f7ba5a3daee3" />
+    <Project Path="Microservicios.Alojamiento.DataAccess/Microservicios.Alojamiento.DataAccess.csproj" Id="f7ec0f95-b5d9-4b10-987c-9547b764f23b" />
+    <Project Path="Microservicios.Cliente.DataManagement/Microservicios.Alojamiento.DataManagement.csproj" Id="ce376f5a-ed59-43e0-a690-617a51b25b55" />
+  </Folder>
+  <Folder Name="/tests/" />
+</Solution>
